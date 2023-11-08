@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+int root;
+int coeff1;
+int coeff2;
+int coeff3;
+int coeff4;
+int coeff5;
+int coeff6;
+int coeff7;
+
+cout << "This calculator can calculate up to 7 coefficients of polynomial expression." << endl;
+cout << "If your expression is shorter than 7 coefficient, insert zero as the coefficient value until you meet your designated expression lenght" << endl;
+cout << "Type your root value of divisor" << endl;
+cin >> root;
+cout << " Type your first coefficient value (If not type zero)" << endl;
+cin >> coeff1;
+cout << "Type your second coefficient value" << endl;
+cin >> coeff2;
+cout << "Type your third coefficient value" << endl;
+cin >> coeff3;
+cout << "Type your fourth coefficient value" << endl;
+cin >> coeff4;
+cout << "Type your fifth coefficient value" << endl;
+cin >> coeff5;
+cout << "Type your sixth coefficient value" << endl;
+cin >> coeff6;
+cout << "Type your seventh coefficient Value" << endl;
+cin >> coeff7;
+cout << endl;
+
+int pol1; // pol means polynomial
+int pol2;
+int pol3;
+int pol4;
+int pol5;
+int pol6;
+int pol7;
+
+pol1 = coeff1;
+pol2 = coeff2 + (root * pol1);
+pol3 = coeff3 + (root * pol2);
+pol4 = coeff4 + (root * pol3);
+pol5 = coeff5 + (root * pol4);
+pol6 = coeff6 + (root * pol5);
+pol7 = coeff7 + (root * pol6);
+
+cout << "Your value is: " << endl;
+cout << pol1 << ", " << pol2 << ", " << pol3 << ", " << pol4 << ", ";
+cout << pol5 << ", " << pol6 << ", " << pol7 << endl;
+cout << "NOTE: your very last value represents remainder of the expression." << endl;
+
+return 0;
+
+}
